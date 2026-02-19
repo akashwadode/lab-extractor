@@ -1,14 +1,22 @@
-// javac -encoding UTF-8 -cp "lib/*" -d bin src\engine\*.java
-// java -cp "bin;lib/*" engine.EngineRunner
-
 package engine;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class EngineRunner {
 
+    // ======================================================
+    // NORMALIZE STRING (Ignore dots, spaces, case)
+    // ======================================================
+    private static String normalize(String s) {
+        if (s == null) return "";
+        return s.replaceAll("[^a-zA-Z]", "")
+                .toLowerCase();
+    }
+
+    // ======================================================
+    // MAIN
+    // ======================================================
     public static void main(String[] args) {
 
         System.out.println("=================================");
@@ -16,6 +24,7 @@ public class EngineRunner {
         System.out.println("=================================");
 
         int labId = 1;
+        int patientId = 1;   // YOU PROVIDE THIS
         String pdfPath = "pdf/report.pdf";
 
         // ======================================================
@@ -30,9 +39,35 @@ public class EngineRunner {
         }
 
         // ======================================================
-        // STEP 2 - Load DB Parameters
+        // STEP 2 - Fetch Patient Name From DB
         // ======================================================
         DatabaseManager db = new DatabaseManager();
+
+        String dbPatientName = db.findPatientNameById(patientId);
+
+        if (dbPatientName == null) {
+            System.out.println("Patient ID not found in database.");
+            return;
+        }
+
+        System.out.println("Patient Name in DB: " + dbPatientName);
+
+        // ======================================================
+        // STEP 3 - Check If DB Name Exists In PDF Text
+        // ======================================================
+        if (!normalize(text).contains(normalize(dbPatientName))) {
+
+            System.out.println("\n❌ ERROR: Patient name not found in PDF!");
+            System.out.println("Expected Name: " + dbPatientName);
+            System.out.println("Processing stopped.");
+            return;
+        }
+
+        System.out.println("✅ Patient name found in PDF. Proceeding...\n");
+
+        // ======================================================
+        // STEP 4 - Load DB Parameters
+        // ======================================================
         Map<String, String> paramMap =
                 db.loadParametersWithMethod(labId);
 
@@ -40,7 +75,7 @@ public class EngineRunner {
                 + paramMap.size());
 
         // ======================================================
-        // STEP 3 - Validate
+        // STEP 5 - Validate Methods
         // ======================================================
         MethodValidationEngine engine =
                 new MethodValidationEngine();
@@ -49,18 +84,12 @@ public class EngineRunner {
                 engine.validate(text, paramMap);
 
         // ======================================================
-        // STEP 4 - Full Output
+        // STEP 6 - PROCESS + INSERT
         // ======================================================
-        System.out.println("\n========= FULL VALIDATION OUTPUT =========");
+        System.out.println("\n========= PROCESSING RESULTS =========");
 
-        int matchCount = 0;
-        int mismatchCount = 0;
-        int dbMissingCount = 0;
-        int pdfMissingCount = 0;
-
-        List<MethodValidationEngine.ValidationResult> mismatches = new ArrayList<>();
-        List<MethodValidationEngine.ValidationResult> dbMissing = new ArrayList<>();
-        List<MethodValidationEngine.ValidationResult> pdfMissing = new ArrayList<>();
+        int insertedCount = 0;
+        int skippedCount = 0;
 
         for (var r : results) {
 
@@ -71,77 +100,56 @@ public class EngineRunner {
             System.out.println("DB Method : " + r.dbMethod);
             System.out.println("STATUS    : " + r.status);
 
-            switch (r.status) {
+            if (r.status.equals("MATCH") ||
+                r.status.equals("MATCH (NO METHOD)")) {
 
-                case "MATCH":
-                case "MATCH (NO METHOD)":
-                    matchCount++;
-                    break;
+                if (r.value != null) {
 
-                case "MISMATCH":
-                    mismatchCount++;
-                    mismatches.add(r);
-                    break;
+                    try {
+                        double numericValue =
+                                Double.parseDouble(r.value);
 
-                case "DB METHOD MISSING":
-                    dbMissingCount++;
-                    dbMissing.add(r);
-                    break;
+                        db.insertPatientResult(
+                                patientId,
+                                labId,
+                                r.parameter,
+                                numericValue
+                        );
 
-                case "PDF METHOD NOT FOUND":
-                    pdfMissingCount++;
-                    pdfMissing.add(r);
-                    break;
+                        insertedCount++;
+
+                    } catch (NumberFormatException e) {
+
+                        System.out.println(
+                                "Invalid numeric value for: "
+                                        + r.parameter);
+
+                        skippedCount++;
+                    }
+
+                } else {
+                    skippedCount++;
+                }
+
+            } else {
+
+                System.out.println(
+                        "❌ NOT INSERTED due to method issue: "
+                                + r.parameter);
+
+                skippedCount++;
             }
-        }
-
-        // ======================================================
-        // FILTERED ERROR SECTION
-        // ======================================================
-        System.out.println("\n=================================");
-        System.out.println(" FILTERED ERROR REPORT ");
-        System.out.println("=================================");
-
-        if (!mismatches.isEmpty()) {
-            System.out.println("\n--- MISMATCHED METHODS ---");
-            for (var r : mismatches) {
-                System.out.println(r.parameter +
-                        " | PDF: " + r.pdfMethod +
-                        " | DB: " + r.dbMethod);
-            }
-        }
-
-        if (!dbMissing.isEmpty()) {
-            System.out.println("\n--- DB METHOD MISSING ---");
-            for (var r : dbMissing) {
-                System.out.println(r.parameter +
-                        " | PDF: " + r.pdfMethod);
-            }
-        }
-
-        if (!pdfMissing.isEmpty()) {
-            System.out.println("\n--- PDF METHOD NOT FOUND ---");
-            for (var r : pdfMissing) {
-                System.out.println(r.parameter +
-                        " | DB: " + r.dbMethod);
-            }
-        }
-
-        if (mismatches.isEmpty() && dbMissing.isEmpty() && pdfMissing.isEmpty()) {
-            System.out.println("No validation issues found.");
         }
 
         // ======================================================
         // FINAL SUMMARY
         // ======================================================
         System.out.println("\n=================================");
-        System.out.println(" VALIDATION SUMMARY ");
+        System.out.println(" PROCESS SUMMARY ");
         System.out.println("=================================");
-        System.out.println("Total Parameters Checked : " + results.size());
-        System.out.println("MATCH                    : " + matchCount);
-        System.out.println("MISMATCH                 : " + mismatchCount);
-        System.out.println("DB METHOD MISSING        : " + dbMissingCount);
-        System.out.println("PDF METHOD NOT FOUND     : " + pdfMissingCount);
+        System.out.println("Total Parameters Found : " + results.size());
+        System.out.println("Inserted               : " + insertedCount);
+        System.out.println("Skipped                : " + skippedCount);
         System.out.println("=================================");
     }
 }
