@@ -1,0 +1,175 @@
+MR Number : 210126061 Bill no :  68514 
+Patient Name : Mrs. Vasanthi Registered On : 21-Jan-2026  06:10 PM
+Age : 74 Yrs Sample Collected On : 21-Jan-2026  06:25 PM
+Gender : Female Sample Reported On : 21-Jan-2026  06:23 PM
+Ref. By : DR. SANTHOSH  H J Barcode 210126061
+HAEMATOLOGY
+Test Name Result Unit Bio.Ref.Range Method
+COMPLETE BLOOD COUNT ( CBC )
+Hemoglobin 15.6 gm/dl 12-16 Photometric
+Packed Cell Volume (HCT) 47.1 % 36-46 Calculated
+R.B.C.Count 4.99 mill/cmm 3.8 - 4.8 Electrical Impedance
+Mean Cell Volume(MCV) 94.4 fl 83-101 Calculated
+Mean Cell Hemoglobin( MCH) 31.3 pg 27-33 Calculated
+Mean Cell Hb Conc(MCHC) 33.1 % 32 -38 Calculated
+Total WBC Count 8300 cells/cumm 4000-11000 Electrical Impedance
+Differential % WBCs count
+Polymorphs 45 % 50-70 Coulter VCSn Tech
+Lymphocytes 46 % 20 -40 Coulter VCSn Tech
+Eosinophils 05 % 1-6 Coulter VCSn Tech
+Monocytes 04 % 0 -10 Coulter VCSn Tech
+Basophils 00 % Coulter VCSn Tech
+Absolute Differential Count :
+Absolute Neutrophils Count 3735 / cumm 2000-7000 Calculated
+Absolute Lymphocytes Count 3818 / cumm 1000-3000 Calculated
+Absolute Monocytes Count 332 / cumm 200-1000 Calculated
+Absolute Eosinophils Count, AEC 415 / cumm 20-500 Calculated
+Platelet Count 2.51 Lakh/cumm 1.5-4.5 Electrical Impedance
+Dr Thej M J Mr.Magimainathan R
+Consultant Pathologist Senior Lab Technologist Msc MLT (Microbiology)
+KMC No: 80889 Page 1 of 6
+MR Number : 210126061 Bill no :  68514 
+Patient Name : Mrs. Vasanthi Registered On : 21-Jan-2026  06:10 PM
+Age : 74 Yrs Sample Collected On : 21-Jan-2026  06:25 PM
+Gender : Female Sample Reported On : 21-Jan-2026  06:23 PM
+Ref. By : DR. SANTHOSH  H J Barcode 210126061
+BIOCHEMISTRY
+Test Name Result Unit Bio.Ref.Range Method
+Blood Sugar Fasting
+Blood Sugar Fasting 119 mg/dL 70 - 110 GOD-POD
+Post Prandial blood sugar
+Post Prandial plasma glucose 167 mg/dL 70 - 140 GOD - POD
+Serum Creatinine
+Serum Creatinine 1.19 mg/dL Adolescent : 0.5 - 1.1 (mod.JaffeM)od Jaffes
+Children : 0.3 - 0.7
+Infants : 0.2 - 0.5
+Adult:
+Male : 0.7 - 1.3
+Female : 0.6 - 1.2
+Dr Thej M J Mr.Magimainathan R
+Consultant Pathologist Senior Lab Technologist Msc MLT (Microbiology)
+KMC No: 80889 Page 2 of 6
+MR Number : 210126061 Bill no :  68514 
+Patient Name : Mrs. Vasanthi Registered On : 21-Jan-2026  06:10 PM
+Age : 74 Yrs Sample Collected On : 21-Jan-2026  06:25 PM
+Gender : Female Sample Reported On : 21-Jan-2026  06:23 PM
+Ref. By : DR. SANTHOSH  H J Barcode 210126061
+Lipid Profile
+Test Name Result Unit Bio.Ref.Range Method
+Lipid Profile
+Total Cholesterol 174.0 mg/dL Desirable : < 200, CHOD/POD
+Borderline high : 200 - 239,
+Undesirable : > 240
+Triglycerides 129.0 mg/dL Desirable : < 150 GPO-Trinders
+Borderline high : 150 - 199
+High : 200 - 499,
+Very High : > 500
+HDL Cholesterol 41.0 mg/dL 37-75 Direct/turbidometry
+NON HDL Cholesterol 133 mg/dL CHD and CHD risk equivalent Calculated
+(10-year risk
+for CHD >20%) : : <130
+Multiple (2+) risk factors and 
+10-year risk
+=20% : < 160
+0–1 risk factor: < 190
+LDL Cholesterol 107.2 mg/dL Optimal : <100, Direct/turbidometry
+Near Optimal : 100 - 129,
+Borderline High : 130 - 159
+High : 160 - 189,
+Very high : >/= 190
+VLDL Cholesterol 25.8 mg/dL 10-40 Calculated
+Triglycerides / HDL Ratio 3.15
+Cholesterol/HDL Chol. Ratio 4.2 Ratio Less than 6.0 Calculated
+LDL Chol / HDL Chol Ratio 2.61 Ratio < 2.0 Calculated
+Note
+Dr Thej M J Mr.Magimainathan R
+Consultant Pathologist Senior Lab Technologist Msc MLT (Microbiology)
+KMC No: 80889 Page 3 of 6
+MR Number : 210126061 Bill no :  68514 
+Patient Name : Mrs. Vasanthi Registered On : 21-Jan-2026  06:10 PM
+Age : 74 Yrs Sample Collected On : 21-Jan-2026  06:25 PM
+Gender : Female Sample Reported On : 21-Jan-2026  06:23 PM
+Ref. By : DR. SANTHOSH  H J Barcode 210126061
+BIOCHEMISTRY
+Test Name Result Unit Bio.Ref.Range Method
+Liver Function Test
+Bilirubin ( Total ) 0.88 mg/dL 0 -1 d: 1.4 -8.7 Diazo
+1 - 2 d: 3.4 - 11.5
+3 - 5d: 1.5 – 12
+Adult: 0.1 - 1.2
+Bilirubin ( Direct ) 0.22 mg/dL 0.1 - 0.3 Diazo
+Bilirubin ( Indirect ) 0.66 mg/dL 0.00 - 0.75 Calculated
+SGOT (AST) 17.8 U/L 5-40 IFCC
+SGPT (ALT) 24.9 U/L 5-45 IFCC
+Alkaline Phosphatase 104 U/L Male : 53 – 128 p-NPP,kinetic
+Female : 42 – 98
+Children: 60 - 270
+New born:
+4 times the adult value
+Total Protein 6.80 g/dl 6.0 - 8.3 Biuret
+Albumin 4.20 g/dl 3.5 - 5.2 BCG dye
+Globulin 2.60 g/dl 1.5 - 3.0 Calculated
+Alb/Glo Ratio 1.62 1.1-1.8 Calculated
+Dr Thej M J Mr.Magimainathan R
+Consultant Pathologist Senior Lab Technologist Msc MLT (Microbiology)
+KMC No: 80889 Page 4 of 6
+MR Number : 210126061 Bill no :  68514 
+Patient Name : Mrs. Vasanthi Registered On : 21-Jan-2026  06:10 PM
+Age : 74 Yrs Sample Collected On : 21-Jan-2026  06:25 PM
+Gender : Female Sample Reported On : 21-Jan-2026  06:23 PM
+Ref. By : DR. SANTHOSH  H J Barcode 210126061
+HORMONES
+Test Name Result Unit Bio.Ref.Range Method
+Thyroid Stimulating Hormone
+TSH (Thyroid Stimulating Hormone) 6.290 mIU/ml Normal:- 0.35-5.5 CLIA
+Interpretation:
+Thyroid stimulating hormone (TSH) is synthesized and secreted by the anterior pituitary in response to a negative feedback mechanism involving 
+concentrations of FT3 (free T3) and FT4 (free T4). Additionally, the hypothalamic tripeptide, thyrotropin-releasing hormone (TRH), directly stimulates TSH 
+production. TSH stimulates thyroid cell production and hypertrophy, also stimulate the thyroid gland to synthesize and secrete T3 and T4. Quantification of TSH 
+is significant to differentiate primary (thyroid) from secondary (pituitary) and tertiary (hypothalamus) hypothyroidism. In primary hypothyroidism, TSH levels 
+are significantly elevated, while in secondary and tertiary hypothyroidism, TSH levels are low.
+TSH levels During Pregnancy :
+First Trimester :0.1 to 2.5 µIU/mL
+Second Trimester : 0.2 to 3.0 µIU/mL
+Third trimester : 0.3 to 3.0 µIU/mL
+TSH levels in infants and children
+Age                     TSH (mIU/mL)
+Cord blood     2.2 to 10.7
+1 to 4 days     2.7 to 26.5
+4 to 30 days     1.2 to 13.1
+1 to 12 months    0.6 to 7.3
+1 to 5 years     0.7 to 6.6
+6 to 10 years     0.8 to 6.0
+Reference : Carl A.Burtis,Edward R.Ashwood,David E.Bruns. Tietz Textbook of Clinical Chemistry and Molecular Diagnostics. 5th Eddition. Philadelphia: WB 
+Sounders,2012:2170
+Reference ranges from https://www.uptodate.com/contents/image?imageKey=PEDS%2F60095.
+Dr Thej M J Mr.Magimainathan R
+Consultant Pathologist Senior Lab Technologist Msc MLT (Microbiology)
+KMC No: 80889 Page 5 of 6
+MR Number : 210126061 Bill no :  68514 
+Patient Name : Mrs. Vasanthi Registered On : 21-Jan-2026  06:10 PM
+Age : 74 Yrs Sample Collected On : 21-Jan-2026  06:25 PM
+Gender : Female Sample Reported On : 21-Jan-2026  06:23 PM
+Ref. By : DR. SANTHOSH  H J Barcode 210126061
+BIOCHEMISTRY
+Test Name Result Unit Bio.Ref.Range Method
+HbA1c
+HbA1c Result 6.6 % < 8 - Less Stringent Goal HPLC
+< 7 - General Goal
+< 6.5 - More Stringent Goal
+< 5.7 - Non-Diabetic Level
+(HPLC)
+Estimated Mean Blood Glucose 142.72 mg/dL
+HbA1c ( Glycemic control ) :
+Overview
+The A1C test is a common blood test used to diagnose type 1 and type 2 diabetes and to monitor how well you're managing your diabetes. The A1C test goes by 
+many other names, including glycated hemoglobin, glycosylated hemoglobin, hemoglobin A1C and HbA1c. The A1C test result reflects your average blood sugar 
+level for the past two to three months. Specifically, the A1C test measures what percentage of your hemoglobin — a protein in red blood cells that carries 
+oxygen — is coated with sugar (glycated). The higher your A1C level, the poorer your blood sugar control and the higher your risk of diabetes complications.
+Limitations
+HBF > 25% and in other hemoglobinopathies an alternate platform is recommened for testing of HbA1C. Trends in HbA1C are better indicator of dibetic control 
+than a single test result.
+***END OF REPORT***
+Dr Thej M J Mr.Magimainathan R
+Consultant Pathologist Senior Lab Technologist Msc MLT (Microbiology)
+KMC No: 80889 Page 6 of 6
